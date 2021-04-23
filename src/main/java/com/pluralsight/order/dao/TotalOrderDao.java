@@ -33,7 +33,7 @@ public class TotalOrderDao {
         try (Connection con = database.getConnection();
              CallableStatement cs = createCallableStatement(con, paramsDto.getCustomerId())
         ) {
-            boolean res = cs.execute();
+            cs.execute();
 
             try(ResultSet resultSet = cs.getResultSet()){
                 if(resultSet !=null && resultSet.next()){

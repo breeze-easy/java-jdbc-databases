@@ -36,7 +36,7 @@ public class Module4_Tests {
             // In case PowerMock doesn't load the driver
             java.sql.DriverManager.registerDriver(new org.h2.Driver());
         } catch (SQLException e) {
-            // e.printStackTrace();
+//             e.printStackTrace();
         }
     }
 
